@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b2a4a;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-container {
+    display: flex;
+    gap: 24px;
+}
+
+/* Tarjetas azul claro */
+.card {
+    background: linear-gradient(#1e90ff, #0c73c8);
+    border-radius: 8px;
+    padding: 16px 18px;
+    width: 260px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    color: white;
+}
+
+.card-header {
+    background: #a3ff3c;
+    color: #0b2a4a;
+    text-align: center;
+    padding: 6px 0;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card-body label {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.85rem;
+}
+
+.card-body input[type="text"],
+.card-body input[type="email"],
+.card-body input[type="password"] {
+    width: 100%;
+    padding: 5px 6px;
+    margin-top: 2px;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    margin-top: 12px;
+    width: 100%;
+    padding: 7px 0;
+    border-radius: 16px;
+    border: none;
+    background: #a3ff3c;
+    color: #0b2a4a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #8fe52f;
+}
+
+.extra-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+    font-size: 0.75rem;
+}
+
+.remember input {
+    margin-right: 4px;
+}
+
+.small-link {
+    color: #e0f2ff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.small {
+    font-size: 0.75rem;
+}
+
+.error-msg {
+    color: #ffd6d6;
+    font-size: 0.8rem;
+    margin-top: 6px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .auth-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+ /* ===== FOOTER ===== */
+.app-footer {
+    margin-top: 40px;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.footer-content p {
+    margin-bottom: 12px;
+}
+
+.footer-content p:last-child {
+    margin-bottom: 0;
+}
+
+.footer-content strong {
+    color: #fff;
+    font-weight: 700;
+}

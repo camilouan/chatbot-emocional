@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Emocional</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'frontend/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-box">
+            <div class="header">
+                <h1>Chatbot Emocional 💬</h1>
+                <p>Usando usuario ID: <span id="userIdDisplay">1</span></p>
+            </div>
+            
+            <div id="chat" class="chat">
+                <div class="mensaje bot">
+                    👋 Hola, soy tu asistente emocional. ¿Cómo te sientes hoy?
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input 
+                    type="text" 
+                    id="mensajeInput" 
+                    placeholder="Escribe tu mensaje..."
+                    autocomplete="off"
+                />
+                <button id="enviarBtn">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    {% csrf_token %}
+    <script src="{% static 'frontend/script.js' %}"></script>
+</body>
+</html>

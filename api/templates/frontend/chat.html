@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat – Chatbot Emocional</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'frontend/chat.css' %}">
+</head>
+<body>
+<div class="page">
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="header-info">
+                <h2>Chatbot Emocional 💬</h2>
+                <p id="estado-usuario" class="estado-usuario">Usando usuario ID: 1</p>
+            </div>
+            <button id="btn-logout" class="btn-logout">Cerrar sesión</button>
+        </div>
+
+        <div class="chat-box" id="chat-box">
+            <div class="mensaje bot">
+                <div class="bubble">👋 Hola, soy tu asistente emocional. ¿Cómo te sientes hoy?</div>
+            </div>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+            <button id="send-btn"></button>
+        </div>
+
+        <!-- FOOTER / PIE DE PÁGINA -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <p>
+                    <strong>🔒 Restricción de Edad:</strong> Esta aplicación está dirigida <strong>exclusivamente a mayores de 18 años</strong>. Prohibido el uso por menores de edad. Si eres menor, consulta con un adulto responsable o profesional de la salud mental.
+                </p>
+                <p>
+                    <strong>Aviso de Responsabilidad:</strong> Este chatbot es una herramienta de apoyo emocional basada en inteligencia artificial y <strong>no es un profesional de la salud mental</strong>. Las respuestas se generan automáticamente y no constituyen diagnóstico, terapia, ni reemplazo de atención con un psicólogo o médico.
+                </p>
+                <p>
+                    <strong>Emergencias:</strong> Si experimentas riesgo inmediato, contáctanos: <strong>Línea 106</strong> (crisis 24/7) o <strong>Línea 123</strong> (riesgo).
+                </p>
+                <p>
+                    <strong>Términos:</strong> Utilizas esta plataforma bajo tu responsabilidad. La información se procesa únicamente para mejorar la experiencia. Al usar esta aplicación, aceptas estos términos.
+                </p>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<script src="{% static 'frontend/chat.js' %}"></script>
+</body>
+</html>

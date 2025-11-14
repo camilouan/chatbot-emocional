@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro – Chatbot Emocional</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'frontend/style.css' %}">
+</head>
+<body>
+    <div class="chat-container">
+        <h2>Registro de usuario</h2>
+
+        <div class="registro-container">
+            <label>Nombre</label>
+            <input type="text" id="nombre">
+
+            <label>Edad</label>
+            <input type="number" id="edad">
+
+            <label>Profesión</label>
+            <input type="text" id="profesion">
+
+            <label>Cosas que te gustan</label>
+            <input type="text" id="cosas_que_le_gustan">
+
+            <label>Cosas que te afectan</label>
+            <input type="text" id="cosas_que_le_afectan">
+
+            <label>Hobbies</label>
+            <input type="text" id="hobbies">
+
+            <label>Deportes</label>
+            <input type="text" id="deportes">
+
+            <label>Música</label>
+            <input type="text" id="musica">
+
+            <button id="btn-registrar">Guardar perfil</button>
+
+            <p id="estado-usuario" class="estado-usuario">
+                No hay usuario registrado aún.
+            </p>
+        </div>
+
+        <div class="acciones-extra">
+            <a href="{% url 'chat_page' %}">Ir al chat</a>
+        </div>
+    </div>
+
+    <script src="{% static 'frontend/registro.js' %}"></script>
+</body>
+</html>

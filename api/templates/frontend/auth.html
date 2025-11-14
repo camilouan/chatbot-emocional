@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Emocional - Login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'frontend/style.css' %}">
+</head>
+<body>
+    <div class="page">
+        <!-- PANEL IZQUIERDO: INFO -->
+        <div class="auth-info">
+            <h1>Chatbot Emocional 💬</h1>
+            <p>Bienvenido a tu asistente emocional personal. Aquí puedes compartir tus sentimientos y recibir apoyo terapéutico personalizado.</p>
+            <div class="age-warning">
+                <p><strong>⚠️ Restricción de Edad:</strong> Esta aplicación está dirigida <strong>exclusivamente a personas mayores de 18 años</strong>. Si eres menor, consulta con un adulto responsable o profesional de la salud mental.</p>
+            </div>
+        </div>
+
+        <!-- PANEL DERECHO: FORMULARIOS -->
+        <div class="auth-forms-wrap">
+            <!-- LOGIN -->
+            <div class="auth-card">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label>Correo</label>
+                        <input type="email" id="login-email" placeholder="tu@correo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Contraseña</label>
+                        <input type="password" id="login-password" placeholder="••••••••" required>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe">Recuérdame</label>
+                    </div>
+                    <button type="button" id="btn-login" class="btn-primary">Login »</button>
+                    <div class="form-footer">
+                    </div>
+                </form>
+            </div>
+
+            <!-- REGISTER -->
+            <div class="auth-card">
+                <h2>Registrarse</h2>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label>Nombre</label>
+                        <input type="text" id="reg-nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Correo</label>
+                        <input type="email" id="reg-email" placeholder="tu@correo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirmar correo</label>
+                        <input type="email" id="reg-email-confirm" placeholder="tu@correo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Contraseña</label>
+                        <input type="password" id="reg-password" placeholder="••••••••" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirmar contraseña</label>
+                        <input type="password" id="reg-password-confirm" placeholder="••••••••" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Edad *</label>
+                        <input type="number" id="reg-edad" placeholder="18" min="18" required>
+                        <span id="age-error" class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Profesión</label>
+                        <input type="text" id="reg-profesion" placeholder="Ej: Estudiante, empleado...">
+                    </div>
+                    <div class="form-group">
+                        <label>Cosas que te gustan hacer</label>
+                        <input type="text" id="reg-gustan" placeholder="Ej: jugar videojuegos, salir en bici">
+                    </div>
+                    <div class="form-group">
+                        <label>Cosas que te afectan</label>
+                        <input type="text" id="reg-afectan" placeholder="Ej: discusiones, sentirme solo">
+                    </div>
+                    <div class="form-group">
+                        <label>Hobbies</label>
+                        <input type="text" id="reg-hobbies" placeholder="Ej: videojuegos, dibujar">
+                    </div>
+                    <div class="form-group">
+                        <label>Deportes</label>
+                        <input type="text" id="reg-deportes" placeholder="Ej: fútbol, ciclismo">
+                    </div>
+                    <div class="form-group">
+                        <label>Música</label>
+                        <input type="text" id="reg-musica" placeholder="Ej: reggaetón, rock, lofi">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="reg-terms" required>
+                        <label for="reg-terms">Confirmo que soy mayor de 18 años y acepto los términos de uso</label>
+                    </div>
+                    <button type="button" id="btn-register" class="btn-primary">Registration »</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER / PIE DE PÁGINA -->
+    <footer class="app-footer">
+        <div class="footer-content">
+            <p>
+                <strong>🔒 Restricción de Edad:</strong> Esta aplicación está dirigida <strong>exclusivamente a mayores de 18 años</strong>. Prohibido el uso por menores de edad. Si eres menor, consulta con un adulto responsable o profesional de la salud mental. (Ley 1098 de 2006 – Código de Infancia y Adolescencia; Ley 1581 de 2012 – Protección de Datos Personales)
+            </p>
+            <p>
+                <strong>Aviso de Responsabilidad:</strong> Este chatbot es una herramienta de apoyo emocional basada en inteligencia artificial y <strong>no es un profesional de la salud mental</strong>. Las respuestas se generan automáticamente y no constituyen diagnóstico, terapia, ni reemplazo de atención con un psicólogo o médico. Su propósito es únicamente brindar acompañamiento general en momentos de malestar emocional.
+            </p>
+            <p>
+                <strong>Situaciones de Emergencia:</strong> Si experimentas desesperación, ideas suicidas, autolesiones o cualquier riesgo inmediato para tu vida, <strong>busca ayuda profesional de inmediato</strong>. En Bogotá y Colombia, contáctanos: <strong>Línea 106</strong> (Atención en crisis emocional, disponible 24/7) o <strong>Línea 123</strong> (Ayuda en situaciones de riesgo). El chatbot no puede intervenir en emergencias.
+            </p>
+            <p>
+                <strong>Términos de Uso:</strong> Utilizas esta plataforma bajo tu responsabilidad. La información que compartes se procesa únicamente para mejorar la experiencia de acompañamiento emocional. Al usar esta aplicación, aceptas estos términos y condiciones. Recomendamos que completes tu perfil con información precisa para personalizar mejor el apoyo que recibes.
+            </p>
+        </div>
+    </footer>
+
+    <script src="{% static 'frontend/auth.js' %}"></script>
+</body>
+</html>
