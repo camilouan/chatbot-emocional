@@ -134,41 +134,6 @@ analyze_emotion("Hoy me siento muy triste")
 
 El sistema devuelve una respuesta empática según la emoción detectada.
 
-🧱 Estructura del Proyecto
-chatbot_emociones/
-│
-├── detector/                 # App principal Django
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── views.py
-│   ├── serializers.py
-│   ├── emotion_ai.py
-│   ├── urls.py
-│   ├── tests.py
-│
-├── templates/
-│   ├── auth.html
-│   ├── chat.html
-│   ├── index.html
-│
-├── static/
-│   ├── css/
-│   │   ├── style.css
-│   │   ├── auth.css
-│   │   ├── chat.css
-│   ├── js/
-│       ├── script.js
-│       ├── auth.js
-│       ├── chat.js
-│       ├── registro.js
-│
-├── db.sqlite3
-├── manage.py
-├── requirements.txt
-├── runtime.txt
-├── Procfile
-└── README.md
 
 ⚖️ Aspectos Éticos
 
